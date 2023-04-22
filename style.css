@@ -19,6 +19,10 @@ a {
   text-decoration: none;
 }
 
+:root {
+  font-size: 62.5%;
+}
+
 /* layout */
 .l_wrapper {
   max-width: 1100px;
@@ -28,7 +32,7 @@ a {
 
 .l_container {
   display: flex;
-  gap: 20px;
+  gap: 30px;
 }
 
 .l_contents {
@@ -38,7 +42,7 @@ a {
 
 .l_sidebar {
   flex-shrink: 0;
-  flex-basis: 250px;
+  flex-basis: 350px;
   box-shadow: inset 0 0 10px rgb(226, 127, 127);
 }
 
@@ -55,8 +59,24 @@ a {
 
 /* component */
 .header {
-  background-color: royalblue;
   padding: 146px 0 89px 0;
+}
+
+.headings {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.headings-list {
+  display: flex;
+  gap: 40px;
+  font-size: 1.5rem;
+  color: #5e607a;
+}
+
+.headings-list-item:hover {
+  color: #e9aa52;
 }
 
 .section {

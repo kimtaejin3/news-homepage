@@ -4,6 +4,12 @@
   font-weight: normal;
 }
 
+@font-face {
+  font-family: "inter-r";
+  src: url(./assets/fonts/static/Inter-Regular.ttf);
+  font-weight: normal;
+}
+
 /* reset */
 * {
   margin: initial;
@@ -88,6 +94,10 @@ a {
   justify-content: space-between;
 }
 
+.headings-title {
+  flex-shrink: 0;
+}
+
 .headings-list {
   display: flex;
   gap: 40px;
@@ -97,6 +107,10 @@ a {
 
 .headings-list-item:hover {
   color: #f15d51;
+}
+
+.headings-toggle {
+  display: none;
 }
 
 .section {
@@ -119,6 +133,7 @@ a {
 }
 
 .primary-title {
+  font-family: "inter";
   font-size: 5.3rem;
   line-height: 1;
 }
@@ -218,6 +233,9 @@ a {
   line-height: 1.9;
 }
 
+.mobile_nav {
+}
+
 @media (max-width: 820px) {
   .l_container {
     flex-direction: column;
@@ -239,5 +257,45 @@ a {
 
   .primary-description p {
     font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 710px) {
+  .headings-list {
+    display: none;
+  }
+
+  .headings-toggle {
+    display: initial;
+  }
+
+  /* this is mobile nav section */
+  .mobile_nav {
+    background-color: #fffdfa;
+    position: absolute;
+    right: 0;
+    display: none;
+    width: 70%;
+    height: 100%;
+    box-shadow: 0 0 3000px 10px black;
+    padding: 40px;
+    box-sizing: border-box;
+  }
+
+  .mobile_nav-toggle {
+    display: block;
+    width: fit-content;
+    margin-left: auto;
+  }
+
+  .mobile_nav-list {
+    margin-top: 90px;
+  }
+
+  .mobile_nav-list-item {
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+    font-weight: lighter;
+    font-family: "inter-r";
   }
 }

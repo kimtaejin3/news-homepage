@@ -13,7 +13,7 @@
     />
 
     <link rel="stylesheet" href="style.css" />
-
+    <script defer src="./assets/js/script.js"></script>
     <title>Frontend Mentor | News homepage</title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -28,6 +28,19 @@
     </style>
   </head>
   <body>
+    <div class="mobile_nav">
+      <a href="#" class="mobile_nav-toggle"
+        ><img src="./assets/images/icon-menu-close.svg" alt=""
+      /></a>
+      <ul class="mobile_nav-list">
+        <li class="mobile_nav-list-item"><a href="#">Home</a></li>
+        <li class="mobile_nav-list-item"><a href="#">New</a></li>
+        <li class="mobile_nav-list-item"><a href="#">Popular</a></li>
+        <li class="mobile_nav-list-item"><a href="#">Trending</a></li>
+        <li class="mobile_nav-list-item"><a href="#">Categories</a></li>
+      </ul>
+    </div>
+
     <header class="header">
       <div class="l_wrapper">
         <div class="headings">
@@ -37,6 +50,9 @@
             </a>
           </h1>
 
+          <a href="#" class="headings-toggle"
+            ><img src="./assets/images/icon-menu.svg" alt=""
+          /></a>
           <ul class="headings-list">
             <li class="headings-list-item">
               <a href="#">Home</a>
@@ -133,7 +149,7 @@
                 </div>
                 <div class="topContent-contents">
                   <span class="topContent-ranking">03</span>
-                  <h3><a href="#">Reviving Retro PCs</a>></h3>
+                  <h3><a href="#">Reviving Retro PCs</a></h3>
                   <p>What happens when old PCs are given modern upgrades?</p>
                 </div>
               </div>

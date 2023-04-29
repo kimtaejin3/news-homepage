@@ -9,3 +9,9 @@ headings_toggle.addEventListener("click", () => {
 mobile_nav_toggle.addEventListener("click", () => {
   mobile_nav.style.display = "none";
 });
+
+window.addEventListener("resize", () => {
+  if (window.innerWidth > 710) {
+    mobile_nav.style.display = "none";
+  }
+});

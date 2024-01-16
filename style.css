@@ -84,6 +84,10 @@ a {
 }
 
 /* component */
+body {
+  position: relative;
+}
+
 .header {
   padding: 146px 0 89px 0;
 }
